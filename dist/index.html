@@ -7,7 +7,13 @@
     <title>Webpack App</title>
   </head>
   <body>
-    <h1 class="text-4xl text-red-700">My Webpack + Tailwind App</h1>
+    <form id="searchForm">
+        <input type="text" id="searchInput" placeholder="Enter your search query">
+        <input type="submit" value="Search">
+    </form>
+
+    <div id="searchResults"></div>
+
     <script src="bundle.js"></script>
   </body>
 </html>
