@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+<script>
+  import Title from "$lib/title.svelte";
+</script>
+
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -6,11 +10,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Webpack App</title>
   </head>
+  <header class="flex justify-center">
+    <div class="flex items-center">
+      <img class="block h-7.5 w-7.5" src="/favicon.png" alt="">
+  
+      <h1 class="ml-2.5 text-5xl">search repository wizard</h1>
+    </div>
+  </header>
   <body>
-    <form id="searchForm">
-        <input type="text" id="searchInput" placeholder="Enter your search query">
-        <input type="submit" value="Search">
-    </form>
+    <div class=" flex justify-center mt-6">
+      <form id="searchForm">
+          <input class=" rounded-full px-3 py-2" type="text" id="searchInput" placeholder="Enter your search query">
+          <input class=" rounded-full px-3 py-2 bg-[#decff1] text-[#422d5d]" type="submit" value="Search">
+      </form>
+    </div>
 
     <div id="searchResults"></div>
 
