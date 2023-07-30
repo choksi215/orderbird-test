@@ -1,0 +1,21 @@
+{
+  "name": "orderbird-test",
+  "packageManager": "yarn@3.4.1",
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  },
+  "dependencies": {
+    "css-loader": "^6.8.1",
+    "postcss": "^8.4.27",
+    "postcss-loader": "^7.3.3",
+    "postcss-preset-env": "^9.1.0",
+    "style-loader": "^3.3.3",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  },
+  "scripts": {
+    "dev": "webpack serve",
+    "build": "webpack"
+  } 
+}
