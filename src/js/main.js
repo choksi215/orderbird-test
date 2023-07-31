@@ -1,6 +1,7 @@
 import {Octokit} from "octokit"
 
-function calculatePopularity(stars, forks){
+function calculatePopularity(stars, forks) {
+    // Calculating the popularity of the Repo
     const score = stars + forks * 2;
     return score >=500
 }
@@ -8,14 +9,14 @@ function calculatePopularity(stars, forks){
 function displaySearchResults(data) {
     const searchResultsDiv = document.getElementById('searchResults');
 
-    // We perform a search using the query and display the results here
+    // We Append the results here
     searchResultsDiv.innerHTML = `
     <div class="flex justify-center mt-6 md:px-32 py-8 w-full">
         <div class="shadow overflow-hidden rounded">
             <div class="bg-[#decff1] rounded-lg">
                 <div class="flex flex-col space-y-3 p-5 text-gray-700 min-w-[340px]">
                     <div class="flex justify-between">
-                        <img class="shadow-xl rounded-full align-middle border-none max-w-[150px] my-4 mx-auto" src="${data.rAvatarUrl}">
+                        <img class="shadow-xl rounded-full align-middle border-none max-w-[150px] my-4 mx-auto" src="${data.rAvatarUrl}" alt"profile picture">
                     </div>
                     <div class="flex justify-between">
                         <b class="w-1/2 text-left py-3 px-4">Repository Name: </b>
@@ -54,6 +55,7 @@ function repoListDTO(rList) {
     const rStars = repo.stargazers_count;
     const rForks = repo.forks;
 
+    // we pass the stars and the forks to the calculatePopularity function
     const rPopularity = calculatePopularity(rStars, rForks);
     // and pass it to the display function
     displaySearchResults({
@@ -106,7 +108,7 @@ function handleSubmit(event) {
 }
 
 function submitListener() {
-    // submit listener
+    // submit listener for the search button
     document.getElementById('searchForm').addEventListener('submit', handleSubmit);
 }
 
