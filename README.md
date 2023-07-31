@@ -18,27 +18,27 @@ A small single page app to get calcualte the popularity of a Github Repo.
 ## Introduction
 
 The goal is to create a single page application that consumes GitHub’s API, and after providing a repository name, displays the following information:
-● Repository’s name and author
-● Author’s profile picture
-● Repository’s stars and forks
-● Whether the repository is popular or not
+- Repository’s name and author
+- Author’s profile picture
+- Repository’s stars and forks
+- Whether the repository is popular or not
 
 ## Getting Started
 
 To get started we use yarn for this project.
-● Download the project and type `yarn` into the terminal to download all the dependencies.
+- Download the project and type `yarn` into the terminal to download all the dependencies.
 
 ### Prerequisites
 
-●  yarn (latest version)
-●  node v19.1.0 (or above)
-●  generate a valid GitHub Access Token
+- yarn (latest version)
+- node v19.1.0 (or above)
+- generate a valid GitHub Access Token
 
 ### Installation
 To ran the project locally:
-● Go to github.com --> Settings --> Developer settings --> Personal access token --> Token (Classic) --> Generate new token.
-● Duplicate the .env.example and rename it just .env
-● Paste the previously generated token key in `AUTH_GITHUB_KEY`
+- Go to github.com --> Settings --> Developer settings --> Personal access token --> Token (Classic) --> Generate new token.
+- Duplicate the .env.example and rename it just .env
+- Paste the previously generated token key in `AUTH_GITHUB_KEY`
 
 ## Development
 
